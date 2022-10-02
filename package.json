@@ -4,7 +4,8 @@
   "license": "MIT",
   "scripts": {
     "start": "nx serve",
-    "build": "nx build",
+    "start:dev": "nx run next-baitham:serve",
+    "build": "nx build --output public",
     "test": "nx test",
     "format": "prettier -w ./ --ignore-path .prettierignore",
     "lint:fix": "NODE_OPTIONS=\"--max-old-space-size=4096\" nx lint --exclude=apps --fix",
